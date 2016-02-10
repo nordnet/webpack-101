@@ -1,0 +1,24 @@
+{
+  "name": "webpack-101",
+  "version": "1.0.0",
+  "description": "Code demos for Webpack 101 Nordnet Academy session",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nordnet/webpack-101.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Dmitry Demyankov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nordnet/webpack-101/issues"
+  },
+  "homepage": "https://github.com/nordnet/webpack-101#readme",
+  "devDependencies": {
+    "node-static": "0.7.7",
+    "webpack": "1.12.13"
+  }
+}
