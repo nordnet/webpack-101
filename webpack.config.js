@@ -14,6 +14,14 @@ module.exports = {
 
   devtool: NODE_ENV === 'development' ? 'inline-cheap-module-source-map' : null,
 
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel'
+    }],
+  },
+
   plugins: [
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV)

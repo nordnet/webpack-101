@@ -1,4 +1,4 @@
-var log = require('./log');
+import log from './log';
 
 log('about');
 

@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/nordnet/webpack-101#readme",
   "devDependencies": {
+    "babel-core": "6.5.1",
+    "babel-loader": "6.2.2",
+    "babel-preset-es2015": "6.5.0",
     "node-static": "0.7.7",
     "webpack": "1.12.13"
   }
