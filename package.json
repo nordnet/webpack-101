@@ -4,6 +4,7 @@
   "description": "Code demos for Webpack 101 Nordnet Academy session",
   "scripts": {
     "build": "webpack",
+    "build:watch": "npm run build -- --watch",
     "start": "static ."
   },
   "repository": {

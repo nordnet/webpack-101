@@ -5,8 +5,6 @@ module.exports = {
     library: 'app'
   },
 
-  watch: true,
-
   watchOptions: {
     aggregateTimeout: 100
   },
