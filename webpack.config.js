@@ -1,6 +1,7 @@
 module.exports = {
   entry: './about',
   output: {
-    filename: 'build.js'
+    filename: 'build.js',
+    library: 'app'
   }
 };
