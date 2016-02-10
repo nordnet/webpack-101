@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Code demos for Webpack 101 Nordnet Academy session",
   "scripts": {
+    "build": "webpack",
+    "start": "static ."
   },
   "repository": {
     "type": "git",
