@@ -5,6 +5,8 @@
   "scripts": {
     "build": "webpack",
     "build:watch": "npm run build -- --watch",
+    "build:profile": "npm run build -- --display-modules -v",
+    "build:stats": "webpack --json --profile > stats.json",
     "start": "static ."
   },
   "repository": {
