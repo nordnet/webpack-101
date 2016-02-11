@@ -36,6 +36,14 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV)
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        drop_console: true,
+        unsafe: true,
+      }
+    }),
+    new webpack.NoErrorsPlugin(),
   ]
 };
