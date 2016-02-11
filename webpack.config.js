@@ -2,10 +2,16 @@ var webpack = require('webpack');
 var NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = {
-  entry: './about',
+  context: __dirname + '/src',
+  entry: {
+    about: './about',
+    profile: './profile'
+  },
   output: {
-    filename: 'build.js',
-    library: 'app'
+    path: __dirname + '/public',
+    publicPath: '/public/',
+    filename: '[name].js',
+    library: '[name]'
   },
 
   watchOptions: {
@@ -37,13 +43,13 @@ module.exports = {
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV)
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-        drop_console: true,
-        unsafe: true,
-      }
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false,
+    //     drop_console: true,
+    //     unsafe: true,
+    //   }
+    // }),
     new webpack.NoErrorsPlugin(),
   ]
 };

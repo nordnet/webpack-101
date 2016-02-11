@@ -5,5 +5,5 @@ export default function logger(message) {
   }
 
   console.info(message);
-  document.getElementById('hello').innerText = message;
+  document.getElementById('message').innerText = message;
 }
