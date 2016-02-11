@@ -14,6 +14,17 @@ module.exports = {
 
   devtool: NODE_ENV === 'development' ? 'inline-cheap-module-source-map' : null,
 
+  resolve: {
+    modulesDirectories: ['node_modules'],
+    extentions: ['', '.js']
+  },
+
+  resolveLoader: {
+    modulesDirectories: ['node_modules'],
+    moduleTemplates: ['*-loader'],
+    extentions: ['', '.js']
+  },
+
   module: {
     loaders: [{
       test: /\.js$/,
